@@ -3,7 +3,6 @@ node {
 
   try {
     sh 'echo $PATH'
-    sh 'which go'
     sh 'go get github.com/googlecodelabs/tools/claat'
     sh 'echo $GOPATH'
     sh 'echo working'
