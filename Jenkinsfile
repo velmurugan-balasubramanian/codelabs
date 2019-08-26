@@ -2,10 +2,10 @@
 pipeline {
     agent any
     tools {
-        go 'go-1.12.9'
+        go 'go'
     }
     environment {
-        GO1129MODULE = 'on'
+        GOMODULE = 'on'
     }
 
     sh 'go version'
