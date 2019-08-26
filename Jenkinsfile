@@ -2,7 +2,8 @@ node {
   def go = tool 'go'
 
   try {
-    sh "echo working"
+    sh 'echo $PATH'
+    sh 'echo working'
     sh 'curl --version'
     sh 'pwd'
     sh 'go version'
