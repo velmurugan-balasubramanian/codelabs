@@ -1,6 +1,7 @@
 node {
     sh "echo working"
-    sh 'go version'
     sh 'curl --version'
     sh 'pwd'
+    sh 'go version'
+    
 }
