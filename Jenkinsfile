@@ -1,3 +1,3 @@
 node {
-    sh 'echo working'
+    sh "echo working"
 }
