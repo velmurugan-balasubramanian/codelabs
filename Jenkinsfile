@@ -11,7 +11,7 @@ pipeline {
           steps{
             sh ' go version'
             sh 'go get github.com/googlecodelabs/tools/claat'
-            sh 'claat version'
+            sh 'claat export hello.md'
           }
         }
     }
