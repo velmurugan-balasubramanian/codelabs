@@ -8,6 +8,11 @@ pipeline {
         GOMODULE = 'on'
     }
 
-    sh 'go version'
+    stages {
+        stage('Compile') {
+            steps {
+                sh 'go version'
+            }
+        }
 
 }
