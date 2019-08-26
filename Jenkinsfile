@@ -1,18 +1,16 @@
-
 pipeline {
     agent any
     tools {
-        go 'go'
+        go 'go-1.11'
     }
     environment {
-        GOMODULE = 'on'
+        GO111MODULE = 'on'
     }
-
     stages {
-        stage('Compile') {
-            steps {
-                sh 'go version'
-            }
+        stage('version'){
+          steps{
+            sh ' go version'
+          }
         }
-
+    }
 }
