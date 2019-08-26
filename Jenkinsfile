@@ -10,7 +10,8 @@ pipeline {
         stage('version'){
           steps{
             sh ' go version'
-            sh 'ls'
+            sh 'go get github.com/googlecodelabs/tools/claat'
+            sh 'claat version'
           }
         }
     }
