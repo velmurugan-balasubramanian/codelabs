@@ -1,7 +1,6 @@
 node {
-    tools {
-      go 'go-1.12.9'
-  }
+  def go = tool 'go'
+
   try {
     sh "echo working"
     sh 'curl --version'
