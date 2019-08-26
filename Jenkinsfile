@@ -1,19 +1,13 @@
-node {
-  def go = tool 'go'
-  try {
-    sh 'echo $PATH'
-    sh 'echo ${GO_VERSION}'
-    sh 'curl -o go.tar.gz https://dl.google.com/go/go1.12.9.src.tar.gz'
-    sh 'tar -zxf go.tar.gz'
-    sh 'ls'
-    sh 'echo working'
-    sh 'curl --version'
+
+pipeline {
+    agent any
+    tools {
+        go 'go-1.12.9'
+    }
+    environment {
+        GO1129MODULE = 'on'
+    }
+
     sh 'go version'
-  }
-  catch(any){
 
-  }
-  finally{
-
-  }
 }
