@@ -3,8 +3,7 @@ node {
 
   try {
     sh 'echo $PATH'
-    sh 'go get github.com/googlecodelabs/tools/claat'
-    sh 'echo $GOPATH'
+    sh 'curl -O https://dl.google.com/go/go1.12.9.src.tar.gz'
     sh 'echo working'
     sh 'curl --version'
     sh 'pwd'
