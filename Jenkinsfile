@@ -10,6 +10,7 @@ pipeline {
         stage('version'){
           steps{
             sh ' go version'
+            sh 'ls'
           }
         }
     }
