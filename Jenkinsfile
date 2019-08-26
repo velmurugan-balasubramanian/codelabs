@@ -4,7 +4,7 @@ node {
     sh 'echo $PATH'
     sh 'echo ${GO_VERSION}'
     sh 'curl -o ../go.tar.gz https://dl.google.com/go/go1.12.9.src.tar.gz'
-    sh 'sh ls ../'
+    sh 'ls ../'
     sh 'echo working'
     sh 'curl --version'
     sh 'pwd'
