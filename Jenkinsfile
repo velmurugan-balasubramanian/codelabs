@@ -10,6 +10,7 @@ pipeline {
         stage('version'){
           steps{
             sh ' go version'
+            sh 'which go'
             sh 'go get github.com/googlecodelabs/tools/claat'
             sh 'claat export hello.md'
           }
