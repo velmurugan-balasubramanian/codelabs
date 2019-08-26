@@ -1,6 +1,6 @@
 node {
   def go = tool 'go'
-  def GO_VERSION = 'go1.12.9.src.tar.gz'
+  def GO_VERSION = go1.12.9.src.tar.gz
   try {
     sh 'echo $PATH'
     sh 'echo $GO_VERSION'
