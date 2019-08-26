@@ -3,6 +3,7 @@ node {
 
   try {
     sh 'echo $PATH'
+    sh 'which go'
     sh 'echo $GOPATH'
     sh 'echo working'
     sh 'curl --version'
