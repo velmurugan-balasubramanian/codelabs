@@ -18,7 +18,7 @@ pipeline {
             sh 'git version'
             sh 'claat export hello.md'
             sh 'echo userInput'
-            echo ("Env:- " userInput)
+            sh 'echo $userInput'
           }
         }
     }
